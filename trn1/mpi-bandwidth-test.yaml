@@ -1,0 +1,60 @@
+apiVersion: kubeflow.org/v2beta1
+kind: MPIJob
+metadata:
+  name: bandwidth-test
+spec:
+  slotsPerWorker: 16
+  runPolicy:
+    cleanPodPolicy: Running
+  mpiReplicaSpecs:
+    Launcher:
+      replicas: 1
+      template:
+        spec:
+          tolerations:
+            - key: "aws.amazon.com/neuron"
+              operator: "Exists"
+              effect: "NoSchedule"
+          containers:
+            - image: <REPLACE_ME_WITH_YOUR_ECR_IMAGE>
+              name: bandwidth-test-launcher
+              command: ["mpirun"]
+              args: [
+                  --allow-run-as-root \
+                  -n 2 -N 1 \
+                  -x NCCL_DEBUG=INFO \
+                  -x NCCL_ALGO=ring \
+                  -x FI_LOG_PROV=efa \
+                  -x FI_EFA_TX_MIN_CREDITS=64 \
+                  -x FI_EFA_ENABLE_SHM_TRANSFER=0 \
+                  --mca plm_rsh_no_tree_spawn 1 \
+                  --bind-to none \
+                  --mca pml ob1 \
+                  --mca mtl ofi \
+                  --mca mtl_ofi_provider_include efa \
+                  --mca oob_tcp_if_include eth0 \
+                  --mca btl_tcp_if_include eth0 \
+                  --oversubscribe \
+                  nccom-test \
+                    --nworkers 64 \
+                    --nnodes 2 \
+                    --minbytes 8 \
+                    --maxbytes 1GB \
+                    --stepfactor 2 \
+                    --iters 50 \
+                    --warmup_iters 5 \
+                    --datatype fp32 \
+                    all_reduce",
+                ]
+    Worker:
+      replicas: 2
+      template:
+        spec:
+          containers:
+            - image: <REPLACE_ME_WITH_YOUR_ECR_IMAGE>
+              name: bandwidth-test
+              resources:
+                limits:
+                  aws.amazon.com/neuron: 16
+                requests:
+                  aws.amazon.com/neuron: 16
