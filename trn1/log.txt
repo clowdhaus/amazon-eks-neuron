@@ -1,0 +1,336 @@
+bash-5.2# cat /tmp/nccom_test_log_bgmc95tq.log
+time="2023-12-07T21:29:38Z" level=trace msg="Getting Neuron info"
+time="2023-12-07T21:29:38Z" level=trace msg="Creating main working directory" dir=/tmp/tmpf52mkfy4
+time="2023-12-07T21:29:38Z" level=trace msg="Unpacking helper scripts"
+time="2023-12-07T21:29:38Z" level=trace msg="Collecting work data"
+time="2023-12-07T21:29:38Z" level=info msg="Generating CC NEFFs"
+time="2023-12-07T21:29:38Z" level=info msg="Generating 1/1 CC NEFF: nccom_neff_allr_x6_2_fp32_r32"
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/20/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/30/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/29/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/31/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/21/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/18/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/25/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/17/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/26/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/22/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/16/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/27/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/24/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/23/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/19/file.neff
+Successfully generated: /tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/28/file.neff
+time="2023-12-07T21:29:38Z" level=trace msg="Unable to get batch count from name" error="Field b not present in name" name=nccom_neff_allr_x6_2_fp32_r32
+time="2023-12-07T21:29:38Z" level=trace msg="Unable to get loop count from name" error="Field l not present in name" name=nccom_neff_allr_x6_2_fp32_r32
+time="2023-12-07T21:29:47Z" level=info msg="Processing NEFF 1/1" NEFF=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/16/file.neff
+time="2023-12-07T21:29:47Z" level=debug msg="Benchmarking model" model=nccom_neff_allr_x6_2_fp32_r32 runtype=LIBMODE_CC
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=2 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/18/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=12 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/28/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=10 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/26/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=13 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/29/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=6 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/22/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=3 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/19/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=4 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/20/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=0 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/16/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=5 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/21/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=11 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/27/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=1 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/17/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=7 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/23/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=15 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/31/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=14 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/30/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=9 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/25/file.neff
+time="2023-12-07T21:29:47Z" level=info msg="Reading NEFF" entry_idx=8 file_path=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/24/file.neff
+time="2023-12-07T21:29:47Z" level=trace msg="Getting neff tensor information"
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff1576126352
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff1576126352/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff1576126352/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff3242039787
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff1639375623
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff4176586675
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff4206388092
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff3208075730
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff292420567
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff1639375623/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff1639375623/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff3242039787/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff3242039787/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff3996012655
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff4176586675/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff4176586675/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff3996012655/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff3996012655/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff3208075730/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff3208075730/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff4206388092/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff4206388092/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff1040206199
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff1040206199/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff1040206199/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff292420567/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff292420567/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff1677726478
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff1677726478/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff1677726478/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff1637320868
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff4106311814
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff2523939307
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff1579542612
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff2623450831
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff1637320868/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff1637320868/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff4106311814/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff4106311814/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff1579542612/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff1579542612/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Successfully unpacked NEFF file" outputPath=/tmp/neff681089475
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=info msg="hlo_stats.json not found. Ignored."
+time="2023-12-07T21:29:47Z" level=info msg="loop.json not found. Ignore."
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff2623450831/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff2623450831/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Loading KELF" filename=kelf-a.json node=1
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff2523939307/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff2523939307/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=debug msg="Loading subgraph" SG=sg00 idx=0
+time="2023-12-07T21:29:47Z" level=debug msg="Failed to read debug info JSON" error="open /tmp/neff681089475/sg00/wavegraph-bin.json: no such file or directory" path=/tmp/neff681089475/sg00/wavegraph-bin.json
+time="2023-12-07T21:29:47Z" level=trace msg="Processing input information"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=trace msg="Using synthetic input data" fill_values="[zero]"
+time="2023-12-07T21:29:47Z" level=info msg="Skipping dry run"
+time="2023-12-07T21:29:47Z" level=info msg="Skipping profiler run"
+time="2023-12-07T21:29:47Z" level=info msg="Setting up directories"
+time="2023-12-07T21:29:47Z" level=info msg="Skipping throughput run"
+time="2023-12-07T21:29:47Z" level=info msg=Benchmarking DataParallel=16 NEFF=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/16/file.neff Type=latency
+time="2023-12-07T21:29:47Z" level=debug msg="Creating model instances" neff_size_kb=17 run_as_cc=true tensor_placement=device thread_count=16 use_multiinstance=false
+time="2023-12-07T21:29:47Z" level=info msg="Loading as CC neff" cc_start_rank=16 cc_world_size=32
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=2 nc_index=2 thread_index=2
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=0 nc_index=0 thread_index=0
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=15 nc_index=15 thread_index=15
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=5 nc_index=5 thread_index=5
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=8 nc_index=8 thread_index=8
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=6 nc_index=6 thread_index=6
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=12 nc_index=12 thread_index=12
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=3 nc_index=3 thread_index=3
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=1 nc_index=1 thread_index=1
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=14 nc_index=14 thread_index=14
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=9 nc_index=9 thread_index=9
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=10 nc_index=10 thread_index=10
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=13 nc_index=13 thread_index=13
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=7 nc_index=7 thread_index=7
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=11 nc_index=11 thread_index=11
+time="2023-12-07T21:29:47Z" level=trace msg="Loading model" instance_index=4 nc_index=4 thread_index=4
+time="2023-12-07T21:29:47Z" level=debug msg="Total NEFF loading time: 170 msec"
+time="2023-12-07T21:29:47Z" level=debug msg="Total IO setup time: 0 msec"
+time="2023-12-07T21:29:47Z" level=debug msg="Ready for benchmarking" cc_mode=true inputs_fill="[zero]" instance_count=16 minimal_tensor_io=true outputs_fill_expected="[]" read_nds_latencies=true save_output_sample=false set_cpu_affinity=false threads_per_instance=1 use_multiinstance=false vcpu_count=128 work=1
+time="2023-12-07T21:29:47Z" level=info msg="Skipping warmup..."
+time="2023-12-07T21:29:47Z" level=warning msg="unable to create NDS reader" error="unable to open nds for pid 15: -1"
+time="2023-12-07T21:29:47Z" level=info msg="Benchmarking ..." work_amount=1
+2023-Dec-07 21:29:47.0858 15:55 [11] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0858 15:55 [11] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.858847    15:55    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.858856    15:55    ERROR   ENC:enc_setup_global_comm                   [nec_dev 11] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.858861    15:55    ERROR  TDRV:v2_cc_execute                           [nec_dev 11] failed to setup global communicator
+2023-Dec-07 21:29:47.858867    15:55    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0860 15:41 [1] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0860 15:41 [1] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.860790    15:41    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.860796    15:41    ERROR   ENC:enc_setup_global_comm                   [nec_dev 1] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.860803    15:41    ERROR  TDRV:v2_cc_execute                           [nec_dev 1] failed to setup global communicator
+2023-Dec-07 21:29:47.860806    15:41    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0863 15:32 [0] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0863 15:32 [0] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.863463    15:32    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.863469    15:32    ERROR   ENC:enc_setup_global_comm                   [nec_dev 0] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.863472    15:32    ERROR  TDRV:v2_cc_execute                           [nec_dev 0] failed to setup global communicator
+2023-Dec-07 21:29:47.863476    15:32    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0866 15:36 [7] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0866 15:36 [7] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.866452    15:36    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.866458    15:36    ERROR   ENC:enc_setup_global_comm                   [nec_dev 7] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.866462    15:36    ERROR  TDRV:v2_cc_execute                           [nec_dev 7] failed to setup global communicator
+2023-Dec-07 21:29:47.866467    15:36    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0869 15:59 [15] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0869 15:59 [15] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.869621    15:59    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.869626    15:59    ERROR   ENC:enc_setup_global_comm                   [nec_dev 15] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.869630    15:59    ERROR  TDRV:v2_cc_execute                           [nec_dev 15] failed to setup global communicator
+2023-Dec-07 21:29:47.869635    15:59    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0871 15:47 [4] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0871 15:47 [4] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.871396    15:47    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.871402    15:47    ERROR   ENC:enc_setup_global_comm                   [nec_dev 4] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.871407    15:47    ERROR  TDRV:v2_cc_execute                           [nec_dev 4] failed to setup global communicator
+2023-Dec-07 21:29:47.871409    15:47    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0874 15:61 [2] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0874 15:61 [2] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.874201    15:61    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.874206    15:61    ERROR   ENC:enc_setup_global_comm                   [nec_dev 2] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.874211    15:61    ERROR  TDRV:v2_cc_execute                           [nec_dev 2] failed to setup global communicator
+2023-Dec-07 21:29:47.874213    15:61    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0875 15:50 [5] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0875 15:50 [5] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.875824    15:50    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.875833    15:50    ERROR   ENC:enc_setup_global_comm                   [nec_dev 5] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.875837    15:50    ERROR  TDRV:v2_cc_execute                           [nec_dev 5] failed to setup global communicator
+2023-Dec-07 21:29:47.875840    15:50    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0877 15:51 [10] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0877 15:51 [10] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.877563    15:51    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.877568    15:51    ERROR   ENC:enc_setup_global_comm                   [nec_dev 10] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.877572    15:51    ERROR  TDRV:v2_cc_execute                           [nec_dev 10] failed to setup global communicator
+2023-Dec-07 21:29:47.877576    15:51    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0879 15:46 [6] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0879 15:46 [6] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.879085    15:46    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.879090    15:46    ERROR   ENC:enc_setup_global_comm                   [nec_dev 6] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.879096    15:46    ERROR  TDRV:v2_cc_execute                           [nec_dev 6] failed to setup global communicator
+2023-Dec-07 21:29:47.879101    15:46    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0880 15:37 [9] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0880 15:37 [9] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.880585    15:37    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.880590    15:37    ERROR   ENC:enc_setup_global_comm                   [nec_dev 9] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.880594    15:37    ERROR  TDRV:v2_cc_execute                           [nec_dev 9] failed to setup global communicator
+2023-Dec-07 21:29:47.880598    15:37    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0882 15:52 [3] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0882 15:52 [3] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.882249    15:52    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.882254    15:52    ERROR   ENC:enc_setup_global_comm                   [nec_dev 3] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.882257    15:52    ERROR  TDRV:v2_cc_execute                           [nec_dev 3] failed to setup global communicator
+2023-Dec-07 21:29:47.882263    15:52    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0883 15:54 [13] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0883 15:54 [13] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.883522    15:54    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.883527    15:54    ERROR   ENC:enc_setup_global_comm                   [nec_dev 13] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.883531    15:54    ERROR  TDRV:v2_cc_execute                           [nec_dev 13] failed to setup global communicator
+2023-Dec-07 21:29:47.883534    15:54    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0885 15:40 [12] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0885 15:40 [12] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.885420    15:40    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.885425    15:40    ERROR   ENC:enc_setup_global_comm                   [nec_dev 12] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.885432    15:40    ERROR  TDRV:v2_cc_execute                           [nec_dev 12] failed to setup global communicator
+2023-Dec-07 21:29:47.885436    15:40    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0887 15:38 [14] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0887 15:38 [14] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.887209    15:38    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.887215    15:38    ERROR   ENC:enc_setup_global_comm                   [nec_dev 14] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.887220    15:38    ERROR  TDRV:v2_cc_execute                           [nec_dev 14] failed to setup global communicator
+2023-Dec-07 21:29:47.887224    15:38    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+2023-Dec-07 21:29:47.0889 15:27 [8] include/socket.h:246 CCOM WARN Net : error encountered when getting address info : Name or service not known
+2023-Dec-07 21:29:47.0889 15:27 [8] bootstrap.cc:49 CCOM WARN Invalid Root comm ID [bandwidth-test-worker-0:61001], please use format: <ipv4>:<port> or [<ipv6>]:<port> or <hostname>:<port>
+2023-Dec-07 21:29:47.889374    15:27    ERROR   ENC:ncclInitGlobalComm                      failed neuronInitGlobalComm request to NCCL
+2023-Dec-07 21:29:47.889377    15:27    ERROR   ENC:enc_setup_global_comm                   [nec_dev 8] failed to init NCCL comm for global comm
+2023-Dec-07 21:29:47.889380    15:27    ERROR  TDRV:v2_cc_execute                           [nec_dev 8] failed to setup global communicator
+2023-Dec-07 21:29:47.889384    15:27    ERROR  NMGR:dlr_infer                               Failed to prep collectives execution, err: 1
+time="2023-12-07T21:29:47Z" level=info msg="Benchmark finished"
+time="2023-12-07T21:29:47Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (1/50)"
+time="2023-12-07T21:29:48Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (2/50)"
+time="2023-12-07T21:29:49Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (3/50)"
+time="2023-12-07T21:29:50Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (4/50)"
+time="2023-12-07T21:29:50Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (5/50)"
+time="2023-12-07T21:29:51Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (6/50)"
+time="2023-12-07T21:29:52Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (7/50)"
+time="2023-12-07T21:29:53Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (8/50)"
+time="2023-12-07T21:29:53Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (9/50)"
+time="2023-12-07T21:29:54Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (10/50)"
+time="2023-12-07T21:29:55Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (11/50)"
+time="2023-12-07T21:29:56Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (12/50)"
+time="2023-12-07T21:29:56Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (13/50)"
+time="2023-12-07T21:29:57Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (14/50)"
+time="2023-12-07T21:29:58Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (15/50)"
+time="2023-12-07T21:29:59Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (16/50)"
+time="2023-12-07T21:29:59Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (17/50)"
+time="2023-12-07T21:30:00Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (18/50)"
+time="2023-12-07T21:30:01Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (19/50)"
+time="2023-12-07T21:30:02Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (20/50)"
+time="2023-12-07T21:30:02Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (21/50)"
+time="2023-12-07T21:30:03Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (22/50)"
+time="2023-12-07T21:30:04Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (23/50)"
+time="2023-12-07T21:30:05Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (24/50)"
+time="2023-12-07T21:30:05Z" level=info msg="CCHttpClient: Unable to send CC data, retrying (25/50)"
+time="2023-12-07T21:30:06Z" level=trace msg="Clean up"
+2023-Dec-07 21:30:06.734929    15:38    ERROR   ENC:enc_stop_operations                     [nec_dev 15] cannot stop model: not in start state(0)2023-Dec-07 21:30:06.734931
+2023-Dec-07 21:30:06.7349352023-Dec-07 21:30:06.734958    15:52    ERROR   ENC:enc_stop_operations                     [nec_dev 0] cannot stop model: not in start state(0)
+    15:28    ERROR   ENC:enc_stop_operations                     [nec_dev 1] cannot stop model: not in start state(0)
+    15:40    ERROR   ENC:enc_stop_operations                     [nec_dev 4] cannot stop model: not in start state(0)
+2023-Dec-07 21:30:06.734964    15:37    ERROR   ENC:enc_stop_operations                     [nec_dev 10] cannot stop model: not in start state(0)
+2023-Dec-07 21:30:06.734983    15:51    ERROR   ENC:enc_stop_operations                     [nec_dev 12] cannot stop model: not in start state(0)
+2023-Dec-07 21:30:06.7349692023-Dec-07 21:30:06.735011    15:46    ERROR   ENC:enc_stop_operations                     [nec_dev 6] cannot stop model: not in start state(0)
+2023-Dec-07 21:30:06.734943    15:54    ERROR   ENC:enc_stop_operations                     [nec_dev 9] cannot stop model: not in start state(0)
+2023-Dec-07 21:30:06.7349962023-Dec-07 21:30:06.7350362023-Dec-07 21:30:06.735040    15:59    ERROR   ENC:enc_stop_operations                         15:36    ERROR   ENC:enc_stop_operations                         15:50    ERROR   ENC:enc_stop_operations                     [nec_dev 14] cannot stop model: not in start state(0)2023-Dec-07 21:30:06.7350412023-Dec-07 21:30:06.735025    15:47    ERROR   ENC:enc_stop_operations                     [nec_dev 5] cannot stop model: not in start state(0)
+[nec_dev 11] cannot stop model: not in start state(0)
+
+    15:32    ERROR   ENC:enc_stop_operations                     [nec_dev 7] cannot stop model: not in start state(0)
+2023-Dec-07 21:30:06.735066    15:55    ERROR   ENC:enc_stop_operations                     [nec_dev 3] cannot stop model: not in start state(0)
+2023-Dec-07 21:30:06.735052    15:41    ERROR   ENC:enc_stop_operations                     [nec_dev 8] cannot stop model: not in start state(0)
+[nec_dev 2] cannot stop model: not in start state(0)
+    15:61    ERROR   ENC:enc_stop_operations                     [nec_dev 13] cannot stop model: not in start state(0)
+time="2023-12-07T21:30:06Z" level=info msg="Skipping PERF run"
+time="2023-12-07T21:30:06Z" level=info msg="Validating results" DataParallel=16 NEFF=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/16/file.neff Type=latency
+time="2023-12-07T21:30:06Z" level=error msg="Invalid load generator output" DataParallel=16 NEFF=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/16/file.neff Type=latency error="No inference finished executing"
+time="2023-12-07T21:30:06Z" level=info msg="Processing raw result files" OutDir=/tmp/tmpf52mkfy4/nccom_neff_allr_x6_2_fp32_r32_dynamic_nc1_b1_i16_LIBMODE_CC
+time="2023-12-07T21:30:06Z" level=warning msg="Raw file not found, continuing" name="BPF Trace"
+time="2023-12-07T21:30:06Z" level=warning msg="Raw file not found, continuing" name="PERF script data"
+time="2023-12-07T21:30:06Z" level=info msg="Writing results" file=/tmp/tmpf52mkfy4/nccom_neff_allr_x6_2_fp32_r32_dynamic_nc1_b1_i16_LIBMODE_CC/info.json
+time="2023-12-07T21:30:06Z" level=info msg="Writing latencies" file1=/tmp/tmpf52mkfy4/nccom_neff_allr_x6_2_fp32_r32_dynamic_nc1_b1_i16_LIBMODE_CC/latency_data.json file2=/tmp/tmpf52mkfy4/nccom_neff_allr_x6_2_fp32_r32_dynamic_nc1_b1_i16_LIBMODE_CC/nc_latency_data.json
+time="2023-12-07T21:30:06Z" level=info msg="Writing CC latencies" file=/tmp/tmpf52mkfy4/nccom_neff_allr_x6_2_fp32_r32_dynamic_nc1_b1_i16_LIBMODE_CC/cc_latency_data.json
+time="2023-12-07T21:30:06Z" level=error msg="Benchmark failed with error" error="No inference finished executing" neff=/tmp/neuron-bench-nccom-neffs/nccom_neff_allr_x6_2_fp32_r32/16/file.neff
+No inference finished executing

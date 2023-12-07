@@ -3,7 +3,7 @@ kind: MPIJob
 metadata:
   name: bandwidth-test
 spec:
-  slotsPerWorker: 16
+  slotsPerWorker: 1
   runPolicy:
     cleanPodPolicy: Running
   mpiReplicaSpecs:
@@ -11,28 +11,26 @@ spec:
       replicas: 1
       template:
         spec:
-          tolerations:
-            - key: 'aws.amazon.com/neuron'
-              operator: 'Exists'
-              effect: 'NoSchedule'
           containers:
-            - image: <REPLACE>
+            - image: <XX-REPLACE-XX>
+              imagePullPolicy: Always
               name: bandwidth-test-launcher
               env:
                 - name: LD_LIBRARY_PATH
                   value: /opt/aws/neuron/lib:/opt/amazon/efa/lib64:/opt/amazon/openmpi/lib64:$LD_LIBRARY_PATH
                 - name: PATH
                   value: $PATH:/opt/aws/neuron/bin:/opt/amazon/efa/bin:/opt/amazon/openmpi/bin:/usr/sbin:/usr/bin:/usr/local/bin
-                - name: CCOM_SOCKET_IFNAME÷
+                - name: CCOM_SOCKET_IFNAME
                   value: eth0
                 - name: NEURON_RT_ROOT_COMM_ID
                   value: bandwidth-test-worker-0:61001
+                - name: FI_EFA_FORK_SAFE
+                  value: '1'
               command: [
                   'mpirun',
                   '--allow-run-as-root',
-                  '--tag-output',
                   '-n',
-                  '16',
+                  '2',
                   '-bind-to',
                   'none',
                   '-map-by',
@@ -45,27 +43,32 @@ spec:
                   'CCOM_SOCKET_IFNAME',
                   '-x',
                   'NEURON_RT_ROOT_COMM_ID',
-                  # '--mca',
+                  '-x',
+                  'FI_EFA_FORK_SAFE',
+                  # '-mca',
                   # 'pml',
-                  # '^cm',
+                  # 'ob1',
+                  # '-mca',
+                  # 'btl',
+                  # '^openib',
                   # '--oversubscribe',
                   # command
                   '/opt/aws/neuron/bin/nccom-test',
-                  # '--script-mode',
+                  '--script-mode',
                   '--nworkers',
-                  '64',
+                  '32',
                   '--nnodes',
                   '2',
                   '--minbytes',
-                  '500M',
+                  '8',
                   '--maxbytes',
-                  '2G',
+                  '1G',
                   '--stepfactor',
                   '2',
                   '--iters',
-                  '10',
+                  '3',
                   '--warmup_iters',
-                  '5',
+                  '3',
                   '--datatype',
                   'fp32',
                   'all_reduce',
@@ -73,10 +76,6 @@ spec:
                   'bandwidth-test-worker-0',
                   'bandwidth-test-worker-1',
                 ]
-          initContainers:
-            - image: <REPLACE>
-              name: init
-              command: ['sh', '-c', 'sleep 5']
     Worker:
       replicas: 2
       template:
@@ -86,17 +85,17 @@ spec:
               operator: 'Exists'
               effect: 'NoSchedule'
           containers:
-            - image: <REPLACE>
+            - image: <XX-REPLACE-XX>
+              imagePullPolicy: Always
               name: bandwidth-test
+              securityContext:
+                privileged: true
               resources:
                 limits:
-                  aws.amazon.com/neuron: 16
+                  aws.amazon.com/neuron: '16'
+                  hugepages-2Mi: 5120Mi
+                  memory: 12G
                 requests:
-                  aws.amazon.com/neuron: 16
-              volumeMounts:
-                - name: dshm
-                  mountPath: /dev/shm
-          volumes:
-            - name: dshm
-              emptyDir:
-                medium: Memory
+                  aws.amazon.com/neuron: '16'
+                  hugepages-2Mi: 5120Mi
+                  memory: 12G

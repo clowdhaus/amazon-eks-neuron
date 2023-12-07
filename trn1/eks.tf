@@ -57,7 +57,17 @@ module "eks" {
 
   eks_managed_node_groups = {
     default = {
-      instance_types = ["t3.large"]
+      instance_types = ["m7i.2xlarge"]
+
+      block_device_mappings = {
+        xvda = {
+          device_name = "/dev/xvda"
+          ebs = {
+            volume_type = "gp3"
+            volume_size = 64
+          }
+        }
+      }
 
       min_size     = 1
       max_size     = 1
@@ -71,9 +81,9 @@ module "eks" {
       enable_bootstrap_user_data = true
 
       instance_types = ["trn1.32xlarge"]
-      min_size     = 2
-      max_size     = 2
-      desired_size = 2
+      min_size       = 2
+      max_size       = 2
+      desired_size   = 2
 
       block_device_mappings = {
         xvda = {

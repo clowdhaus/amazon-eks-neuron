@@ -41,11 +41,10 @@ RUN dnf install -y \
 RUN dnf install -y \
     openssh-clients \
     openssh-server \
-  && dnf clean all \
   && mkdir -p /var/run/sshd \
   && ssh-keygen -A \
   && sed -i "s/[ #]\(.*StrictHostKeyChecking \).*/ \1no/g" /etc/ssh/ssh_config \
-  && echo "        UserKnownHostsFile /dev/null" >> /etc/ssh/ssh_config \
+  && echo "    UserKnownHostsFile /dev/null" >> /etc/ssh/ssh_config \
   && sed -i "s/#\(StrictModes \).*/\1no/g" /etc/ssh/sshd_config \
   && dnf clean all \
   && rm -rf /var/cache/dnf/* /var/cache/yum/*

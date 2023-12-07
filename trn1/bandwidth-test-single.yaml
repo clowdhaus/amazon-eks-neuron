@@ -1,0 +1,64 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: bandwidth-single
+spec:
+  template:
+    spec:
+      tolerations:
+        - key: 'aws.amazon.com/neuron'
+          operator: 'Exists'
+          effect: 'NoSchedule'
+      containers:
+        - image: <XX-REPLACE-XX>
+          imagePullPolicy: Always
+          name: bandwidth-test
+          env:
+            - name: LD_LIBRARY_PATH
+              value: /opt/aws/neuron/lib:/opt/amazon/efa/lib64:/opt/amazon/openmpi/lib64:$LD_LIBRARY_PATH
+            - name: PATH
+              value: $PATH:/opt/aws/neuron/bin:/opt/amazon/efa/bin:/opt/amazon/openmpi/bin:/usr/sbin:/usr/bin:/usr/local/bin
+            - name: CCOM_SOCKET_IFNAME
+              value: eth0
+            - name: NEURON_RT_ROOT_COMM_ID
+              value: bandwidth-test-worker-0:61001
+            - name: FI_EFA_FORK_SAFE
+              value: '1'
+          securityContext:
+            privileged: true
+          resources:
+            limits:
+              aws.amazon.com/neuron: '16'
+              hugepages-2Mi: 5120Mi
+              memory: 12G
+            requests:
+              aws.amazon.com/neuron: '16'
+              hugepages-2Mi: 5120Mi
+              memory: 12G
+          command:
+            [
+              '/opt/aws/neuron/bin/nccom-test',
+              '--script-mode',
+              '--nworkers',
+              # '32',
+              '16',
+              # '--nnodes',
+              # '2',
+              '--minbytes',
+              '1k',
+              '--maxbytes',
+              '1G',
+              '--stepfactor',
+              '4',
+              '--iters',
+              '3',
+              '--warmup_iters',
+              '3',
+              '--datatype',
+              'fp32',
+              'all_reduce',
+              # '--hosts',
+              # 'bandwidth-test-worker-0',
+              # 'bandwidth-test-worker-1',
+            ]
+      restartPolicy: Never

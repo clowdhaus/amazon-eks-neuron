@@ -27,3 +27,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+# Ignore generated build script
+/trn1/build.sh
