@@ -2,8 +2,8 @@ FROM public.ecr.aws/amazonlinux/amazonlinux:2023
 
 ARG EFA_INSTALLER_VERSION='1.29.0'
 
-ENV PATH="$PATH:/opt/aws/neuron/bin/:/opt/amazon/efa/bin:/opt/amazon/openmpi/bin/"
-ENV LD_LIBRARY_PATH="/opt/aws/neuron/lib/:/opt/amazon/efa/lib64/:/opt/amazon/openmpi/lib64/"
+ENV PATH="$PATH:/opt/aws/neuron/bin:/opt/amazon/efa/bin:/opt/amazon/openmpi/bin"
+ENV LD_LIBRARY_PATH="/opt/aws/neuron/lib:/opt/amazon/efa/lib64:/opt/amazon/openmpi/lib64"
 
 COPY neuron.repo /etc/yum.repos.d/neuron.repo
 
